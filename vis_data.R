@@ -1,7 +1,7 @@
 # Title:    visualização de Dados
 # Author:   Antonio Sergio da Silva
 # File:     Fundamentos da Linguagem R
-# Project:  League Online Courses
+# Project:  League Online Courses SGQ
 # Purpose:
 # Date:
 
@@ -67,8 +67,8 @@ fs::dir_create("aed")
 d_int <- c(1,1,2,2,3,3,3,3,5,5,4,4,3,3,2,2,4,4,4,3)
 summary(d_int)
 
-d_int<-as.tibble(d_int)
-
+d_int<-as_tibble(d_int)
+d_int
 #------------------------------------------------------------------------------
 
 # BOXPLOT #####################################################################
@@ -114,6 +114,10 @@ ggarrange(bxp,htg,
           labels = c("Boxplot", "Histograma"))
 
 #------------------------------------------------------------------------------
+
+## Carregando uma base de dados ###############################################
+
+sd_met <- import("C:/home/loc_sgq/sd_met.xlsx")
 
 ## Box Plot ###################################################################
 
@@ -259,5 +263,5 @@ plot(x, col=(km_out$cluster+1),
      cex = 0.7)
 #------------------------------------------------------------------------------
 
-
-
+use_git()
+use_github()
