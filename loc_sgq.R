@@ -1,5 +1,5 @@
 # Title:    Configuração do Git e do GitHub
-# Author:   Antonio Sergio da Silva
+# Author:   Rubia Soraya Rabello
 # File:     Fundamentos da Linguagem R
 # Project:  League Online Courses
 # Purpose:
@@ -97,7 +97,7 @@ create_github_token() # Isto só se faz uma única vez por máquina.
 
 gitcreds::gitcreds_set()
 
-2# Isto só se faz uma única vez por máquina.
+# Isto só se faz uma única vez por máquina.
 # Esta função pedirá para inserir o token pessoal.
 
 ## SAÍDAS no console -------------------------------------------
