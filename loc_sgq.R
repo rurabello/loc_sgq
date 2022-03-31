@@ -31,7 +31,7 @@ library (usethis)
 
 # Criar o CAMINHO ABSOLUTO
 
-create_project("C:/home/loc_sgq")
+create_project("C:/rubia/loc_sgq")
 
 # Saidas no Console-------------------------------------------------------------
     #√ Creating 'C:/home/loc_sgq/'
@@ -46,8 +46,8 @@ create_project("C:/home/loc_sgq")
 # Configurar o R para o Git e O GitHub #########################################
 
 use_git_config(
-    user.name = "ansesi",
-        user.email = "tao281168@gmail.com"
+    user.name = "rurabello",
+        user.email = "rurabello@yahoo.com"
 )
 
 # Ao rodar estes comandos, o R ja casdastra o Git. Isto só se faz uma única vez por máquina.
@@ -97,7 +97,7 @@ create_github_token() # Isto só se faz uma única vez por máquina.
 
 gitcreds::gitcreds_set()
 
-# Isto só se faz uma única vez por máquina.
+2# Isto só se faz uma única vez por máquina.
 # Esta função pedirá para inserir o token pessoal.
 
 ## SAÍDAS no console -------------------------------------------
@@ -117,7 +117,7 @@ use_github() # Será usado toda vez que for criar um projeto
 
 gitcreds::gitcreds_set()  # Isto só se faz uma única vez por máquina.
 
-## SAÍDAS no console -------------------------------------------
+1## SAÍDAS no console -------------------------------------------
 
 # -> Your current credentials for 'https://github.com':
 
