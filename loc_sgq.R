@@ -2,9 +2,9 @@
 # Author:   Antonio Sergio da Silva
 # File:     Fundamentos da Linguagem R
 # Project:  League Online Courses
-# Prupose:  home
-# Date:
-#
+# Purpose:
+Date:       now()
+
 
 # INSTALL AND LOAD PACKAGES ###################################################
 
@@ -90,6 +90,54 @@ use_git()
 # CRIAR UM TOKEN ---------------------------------------------------------------
 
 use_git()
-create_github_token()
 
-#Os comandos criam o token de acesso pessoal via computador
+create_github_token() # Isto só se faz uma única vez por máquina.
+
+#A função cria o token de acesso pessoal via computador.
+
+gitcreds::gitcreds_set()
+
+# Isto só se faz uma única vez por máquina.
+# Esta função pedirá para inserir o token pessoal.
+
+## SAÍDAS no console -------------------------------------------
+
+
+#   * Call `gitcreds::gitcreds_set()` to register this token in #   the local Git credential store
+#   It is also a great idea to store this token in any password
+#   -management software that you use
+#   √ Opening URL 'https://github.com/settings/tokens/new?scopes#=repo,user,gist,workflow&description=DESCRIBE THE TOKEN\'S USE #CASE'
+
+
+
+
+
+use_github() # Será usado toda vez que for criar um projeto
+
+
+gitcreds::gitcreds_set()  # Isto só se faz uma única vez por máquina.
+
+## SAÍDAS no console -------------------------------------------
+
+# -> Your current credentials for 'https://github.com':
+
+#   protocol: https
+#   host    : github.com
+#   username: PersonalAccessToken
+#   password: <-- hidden -->
+
+#   -> What would you like to do?
+
+#   1: Keep these credentials
+#   2: Replace these credentials
+#   3: See the password / token
+
+#   Selection: 2
+
+#   -> Removing current credentials...
+
+#   ? Enter new password or token: **********************
+#   -> Adding new credentials...
+#   -> Removing credetials from cache...
+#   -> Done.
+#   >
