@@ -8,7 +8,7 @@
 
 # INSTALL AND LOAD PACKAGES ###################################################
 
-# Load base packages (modo naual) ---------------------------------------------
+# Load base packages (modo manual) ---------------------------------------------
     # install.packages(" ")
     # library()
     # require()
@@ -42,3 +42,54 @@ create_project("C:/home/loc_sgq")
     # √ Opening 'C:/home/loc_sgq/' in new RStudio session
     # √ Setting active project to '<no active project>'
     # >
+
+# Configurar o R para o Git e O GitHub #########################################
+
+use_git_config(
+    user.name = "ansesi",
+        user.email = "tao281168@gmail.com"
+)
+
+# Ao rodar estes comandos, o R ja casdastra o Git. Isto só se faz uma única vez por máquina.
+
+# Registrar a pasta como repositório -------------------------------------------
+# O Git fará a partir de então o controle da pasta desta pasta de versão
+
+use_git()
+
+#   > use_git()
+
+#   Saídas
+#   √ Setting active project to 'C:/home/loc_sgq'
+#   √ Initialising Git repo
+#   √ Adding '.Rhistory', '.Rdata', '.httr-oauth', '.DS_Store' to '.gitignore'
+#   There are 3 uncommitted files:
+#   * '.gitignore'
+#   * 'loc_sgq.R'
+#   * 'loc_sgq.Rproj'
+#   Is it ok to commit them?
+
+#   1: Absolutely not
+#   2: No
+#   3: Definitely
+
+#Selection: 3  (as palavras sempre mudam de ordem nas alternativas, e podem ser substituídas por sinônimos)
+
+#-------------------------------------------------------------------------------
+
+#   √ Making a commit with message 'Initial commit'
+#   * A restart of RStudio is required to activate the Git pane
+#   Restart now?
+
+#   1: Not now
+#   2: I agree
+#   3: Absolutely not
+
+#   Selection: 2
+
+# CRIAR UM TOKEN ---------------------------------------------------------------
+
+use_git()
+create_github_token()
+
+#Os comandos criam o token de acesso pessoal via computador
